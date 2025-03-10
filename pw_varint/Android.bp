@@ -16,6 +16,14 @@ package {
     default_applicable_licenses: ["external_pigweed_license"],
 }
 
+filegroup {
+    name: "pw_varint_chre_daemon_srcs",
+    srcs: [
+        "varint_c.c",
+        "varint.cc",
+    ],
+}
+
 cc_library_static {
     name: "pw_varint",
     cpp_std: "c++20",

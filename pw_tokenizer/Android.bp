@@ -16,6 +16,14 @@ package {
     default_applicable_licenses: ["external_pigweed_license"],
 }
 
+filegroup {
+    name: "pw_tokenizer_chre_daemon_srcs",
+    srcs: [
+        "decode.cc",
+        "detokenize.cc",
+    ],
+}
+
 cc_library_static {
     name: "pw_detokenizer",
     cpp_std: "c++20",
